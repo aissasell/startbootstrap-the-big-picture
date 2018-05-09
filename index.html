@@ -12,6 +12,10 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Leaflet css -->
+    <link rel="stylesheet" href="vendor/leaflet/leaflet/leaflet.css">
+    
+    <script src="vendor/leaflet/leaflet/leaflet.js"></script>
 
     <!-- Custom styles for this template -->
     <link href="css/the-big-picture.css" rel="stylesheet">
@@ -50,14 +54,15 @@
 
     <!-- Page Content -->
     <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h1 class="mt-5">The Big Picture</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt voluptates rerum eveniet sapiente repellat esse, doloremque quod recusandae deleniti nostrum assumenda vel beatae sed aut modi nesciunt porro quisquam voluptatem.</p>
-          </div>
+        <div id="map">
+            <script>
+                var map = L.map('map').setView([36.843440,+10.325793], 6);
+                L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a>'
+                }).addTo(map);
+            </script>
         </div>
-      </div>
+
     </section>
 
     <!-- Bootstrap core JavaScript -->

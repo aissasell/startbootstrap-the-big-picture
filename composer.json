@@ -1,0 +1,15 @@
+{
+    "name": "aissasell/oumaima-web-app",
+    "description": "A webmapping app for education purpose",
+    "type": "project",
+    "license": "MIT Licence",
+    "authors": [
+        {
+            "name": "Salem Ben Aissa",
+            "email": "aissasell@gmail.com"
+        }
+    ],
+    "require": {
+        "leaflet/leaflet": "^1.3"
+    }
+}
